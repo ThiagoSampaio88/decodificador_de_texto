@@ -12,7 +12,7 @@ function encriptar() {
   var txtCriptado = txtCriptado.replace(/a/gim, 'ai')
   var txtCriptado = txtCriptado.replace(/u/gim, 'ufat')
 
-  document.getElementById('menino-lupa').style.display = 'none'
+  //document.getElementById('menino-lupa').style.display = 'none'
   document.getElementById('txt-menino-lupa').style.display = 'none'
   document.getElementById('text-area').innerHTML = txtCriptado
   document.getElementById('copia').style.display = 'show'
@@ -31,7 +31,7 @@ function desencriptar() {
   var txtCriptado = txtCriptado.replace(/ai/gim, 'a')
   var txtCriptado = txtCriptado.replace(/ufat/gim, 'u')
 
-  document.getElementById('menino-lupa').style.display = 'none'
+  //document.getElementById('menino-lupa').style.display = 'none'
   document.getElementById('txt-menino-lupa').style.display = 'none'
   document.getElementById('text-area').innerHTML = txtCriptado
   document.getElementById('copia').style.display = 'show'
