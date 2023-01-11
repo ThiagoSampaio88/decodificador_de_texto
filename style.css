@@ -32,7 +32,7 @@ body{
   background:#ff0000;
 }
 
-.input-txt-esq{
+#text-area-esq{
   float: left;
   margin-left: 10%;
   margin-top: 15%;
@@ -75,6 +75,23 @@ body{
   border: none;
   outline: none;
   font-size: 15px;
+}
+
+#copia{
+  margin-left: 33%;
+  margin-top: 12%;
+  display: none;
+  padding: 15px;
+  width: 40%;
+  height: 10%;
+  background: #d8dfeb;
+  border-radius: 20px;
+}
+
+.aviso{
+  font-size: 18px;
+  color:#00008b;
+  margin-left: 35%;
 }
 
 .botoes{
