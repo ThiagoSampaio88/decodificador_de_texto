@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Encriptador de texto - Challenger</title>
   </head>
   <body>
@@ -13,24 +14,55 @@
         <img src="img/logo.png" alt="Logo" class="logo-img" />
       </div>
       <div class="txt-esquerdo">
-        <input
-          class="input-txt-esq"
+        <!--<input
+          class="txt-esq"
+          id="input-text-esq"
           type="text"
           placeholder="Digite seu texto!"
-        />
+        />--><textarea
+          class="txt-esq"
+          id="text-area-esq"
+          name="name"
+          cols="30"
+          rows="10"
+          placeholder="Digite seu texto!"
+        ></textarea>
       </div>
       <div class="txt-direito">
-        <img src="img/lupa.png" alt="Menino com lupa" class="menino-img" />
-        <h1 class="texto-lupa">Nenhuma mensagem encontrada.</h1>
-        <textarea class="txt-area" name="name" id="" cols="30" rows="10">
+        <img
+          src="img/lupa.png"
+          alt="Menino com lupa"
+          id="menino-lupa"
+          class="menino-img"
+        />
+        <h1 id="txt-menino-lupa" class="texto-lupa">
+          Nenhuma mensagem encontrada.
+        </h1>
+        <textarea
+          class="txt-area"
+          name="name"
+          id="text-area"
+          cols="30"
+          rows="10"
+        >
 Digite um texto que deseja encriptar ou dersencriptar
         </textarea>
+        <button id="copia" type="button" name="button" onclick="copia()">
+          Copiar
+        </button>
       </div>
       <div class="botoes">
-        <p>Apenas minúsculo e sem acentos!</p>
-        <button type="button" id="btn-encriptar">Encriptar</button>
-        <button type="button" id="btn-desencriptar">Desencriptar</button>
+        <p class="aviso">Apenas minúsculo e sem acentos!</p>
+
+        <button type="button" id="btn-encriptar" onclick="encriptar()">
+          Encriptar
+        </button>
+        <button type="button" id="btn-desencriptar" onclick="desencriptar()">
+          Desencriptar!
+        </button>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
